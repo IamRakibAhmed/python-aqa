@@ -2,7 +2,7 @@ from behave import given, when, then
 from Lesson4.test.AmazonCartVerificationTest import AmazonCartVerificationTest
 
 
-class StepDefinitions:
+class AmazonCartSteps:
     @given('I am on the Amazon homepage')
     def open_amazon_homepage(context):
         context.amazon_page = AmazonCartVerificationTest()
