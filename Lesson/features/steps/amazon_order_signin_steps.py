@@ -2,8 +2,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from behave import given, when, then
 
-from Lesson5.features.pages.amazon_orders_page import AmazonOrdersPage
-from Lesson5.features.pages.amazon_page import AmazonPage
+from Lesson.features.pages.amazon_orders_page import AmazonOrdersPage
+from Lesson.features.pages.amazon_page import AmazonPage
 
 
 @given('Open Amazon page')

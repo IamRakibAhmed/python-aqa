@@ -1,5 +1,5 @@
 from behave import when, then
-from Lesson5.features.pages.amazon_add_product_page import AmazonAddProductToCart
+from Lesson.features.pages.amazon_add_product_page import AmazonAddProductToCart
 
 
 @when('Search for "{product}"')
