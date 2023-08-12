@@ -1,11 +1,9 @@
 from selenium.webdriver.common.by import By
+from Lesson.features.pages.base_page import BasePage
 
 
-class AmazonOrdersPage:
-    AMAZON_ORDERS_LINK = (By.XPATH, "//a[contains(@href, '/gp/css/order-history')]")
-
-    def __init__(self, context):
-        self.driver = context.driver
+class AmazonOrdersPage(BasePage):
+    AMAZON_ORDERS_LINK = (By.ID, "nav-orders")
 
     def click_amazon_orders_link(self):
-        self.driver.find_element(*self.AMAZON_ORDERS_LINK).click()
+        self.click(self.AMAZON_ORDERS_LINK)

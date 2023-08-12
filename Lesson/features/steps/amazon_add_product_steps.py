@@ -4,7 +4,7 @@ from Lesson.features.pages.amazon_add_product_page import AmazonAddProductToCart
 
 @when('Search for "{product}"')
 def search_product(context, product):
-    context.amazon_page = AmazonAddProductToCart(context)
+    context.amazon_page = AmazonAddProductToCart(context.driver)
     context.amazon_page.search_for_product(product)
 
 
